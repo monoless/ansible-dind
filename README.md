@@ -5,10 +5,10 @@ A Docker-in-Docker image that includes Ansible to use with GitLab/CI.
 ```Dockerfile
 deploy:
   stage: deploy
-  image: alexnjose/ansible-docker:19.03.1
+  image: monoless/ansible-docker:18.09.9
 
   services:
-    - docker:19.03.1-dind
+    - docker:18.09.9-dind
   variables:
     DOCKER_DRIVER: overlay2
     DOCKER_TLS_CERTDIR: "/certs"
